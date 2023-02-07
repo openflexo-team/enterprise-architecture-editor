@@ -78,7 +78,7 @@ public class EAPerspective extends NaturePerspective<EAProjectNature> {
 	 * @param name
 	 */
 	public EAPerspective(EAMController controller) {
-		super("geve_perspective", controller);
+		super(controller);
 
 		browser = new FIBEAMProjectBrowser(controller.getProject(), controller);
 
@@ -87,6 +87,11 @@ public class EAPerspective extends NaturePerspective<EAProjectNature> {
 		if (controller.getProject() != null) {
 			setProject(controller.getProject());
 		}
+	}
+
+	@Override
+	public String getName() {
+		return "ea_perspective";
 	}
 
 	@Override
@@ -106,7 +111,7 @@ public class EAPerspective extends NaturePerspective<EAProjectNature> {
 
 		browser.setRootObject(project);
 	}
-	
+
 	@Override
 	public boolean isRepresentableInModuleView(FlexoObject object) {
 		if (object instanceof EAProjectNature) {
@@ -168,7 +173,7 @@ public class EAPerspective extends NaturePerspective<EAProjectNature> {
 		}
 		return super.getRepresentableMasterObject(object);
 	}
-	
+
 	public FMLRTVirtualModelInstance getProcessDiagram(FlexoConceptInstance process) {
 		try {
 			return (FMLRTVirtualModelInstance) process.execute("container.container.getProcessDiagram(this)");
