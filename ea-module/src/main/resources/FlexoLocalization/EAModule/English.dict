@@ -1,5 +1,6 @@
 configure_bpmn_modelling=Configure bpmn modelling
 configure_enterprise_architecture_nature=Configure enterprise architecture nature
+ea_perspective=Ea perspective
 geve_perspective=Geve perspective
 gives_enterprise_architecture_nature=Gives enterprise architecture nature
 gives_project_enterprise_architecture_nature=Gives project enterprise architecture nature

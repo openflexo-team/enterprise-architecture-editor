@@ -52,7 +52,7 @@ import org.openflexo.foundation.fml.rm.CompilationUnitResource;
 import org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstance;
 import org.openflexo.foundation.fml.rt.action.CreateBasicVirtualModelInstance;
 import org.openflexo.foundation.resource.SaveResourceException;
-import org.openflexo.modelers.ModelersConstants;
+import org.openflexo.modelers.bpmn.BPMNModelerConstants;
 import org.openflexo.toolbox.StringUtils;
 
 /**
@@ -133,7 +133,7 @@ public class CreateBPMNVirtualModelInstance extends EAMAction<CreateBPMNVirtualM
 	}
 
 	public CompilationUnitResource getBPMNVirtualModelResource() {
-		return getServiceManager().getVirtualModelLibrary().getCompilationUnitResource(ModelersConstants.BPMN_EDITOR_URI);
+		return getServiceManager().getVirtualModelLibrary().getCompilationUnitResource(BPMNModelerConstants.BPMN_EDITOR_URI);
 	}
 
 	@Override

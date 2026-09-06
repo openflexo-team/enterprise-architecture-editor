@@ -29,7 +29,7 @@
 		                isEditable="false" filtered="false" defaultVisible="true" name="bpmnVMI">
 			<Children data="bpmnVMI.rootProcesses" name="rootProcesses"/>
 		</BrowserElement>
-     <BrowserElement dataClassName="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process&gt;" icon="controller.iconForObject(process)" label="controller.getProcessName(process)" isEditable="false" name="process">
+     <BrowserElement dataClassName="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/bpmn-modeler/FML/BPMNEditor.fml/BPMNModel.fml#Process&gt;" icon="controller.iconForObject(process)" label="controller.getProcessName(process)" isEditable="false" name="process">
         <Children data="controller.getChildProcesses(process)" name="children" />
       </BrowserElement>
 	</Browser>

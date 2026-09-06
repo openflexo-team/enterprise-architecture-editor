@@ -6,10 +6,11 @@ dependencies {
   implementation diagramConnectorUi()
   implementation ginaConnector()
   implementation ginaConnectorUi()
-  implementation openflexo("modelers-api")
-
-  // This resource center must always be present at run-time
-  runtimeOnly openflexo("modelers-rc")
+  // The BPMN modeler: a self-contained project carrying its API, its resource center (which must
+  // always be present at run-time) and the EMF / GINA connectors its VirtualModels mount. It used
+  // to be reached through modelers-api + modelers-rc, where it shared the
+  // http://openflexo.org/modellers resource center with the StateCharts, UML and OWL modelers.
+  implementation openflexo("bpmn-modeler")
 
   // external dep
   // testing dep
