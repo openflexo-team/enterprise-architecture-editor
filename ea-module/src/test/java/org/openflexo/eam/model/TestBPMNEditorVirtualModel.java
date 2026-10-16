@@ -46,7 +46,7 @@ import org.junit.runner.RunWith;
 import org.openflexo.OpenflexoProjectAtRunTimeTestCaseWithGUI;
 import org.openflexo.foundation.fml.VirtualModel;
 import org.openflexo.foundation.fml.rm.CompilationUnitResource;
-import org.openflexo.modelers.ModelersConstants;
+import org.openflexo.modelers.bpmn.BPMNModelerConstants;
 import org.openflexo.test.OrderedRunner;
 import org.openflexo.test.TestOrder;
 import org.openflexo.test.UITest;
@@ -85,7 +85,7 @@ public class TestBPMNEditorVirtualModel extends OpenflexoProjectAtRunTimeTestCas
 		log("testBPMNEditorVirtualModel");
 
 		CompilationUnitResource bmpnVirtualModelResource = serviceManager.getVirtualModelLibrary()
-				.getCompilationUnitResource(ModelersConstants.BPMN_EDITOR_URI);
+				.getCompilationUnitResource(BPMNModelerConstants.BPMN_EDITOR_URI);
 		assertNotNull(bmpnVirtualModelResource);
 
 		VirtualModel bpmnVP;
